@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Sitemap: https://aurorahall.ru/sitemap.xml
+
+# Демо-сайт. Если разворачиваете на проде — замените домен в sitemap.xml

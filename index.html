@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Аврора Холл — камерный ресторан для свадьбы в центре Санкт-Петербурга</title>
+<meta name="description" content="Свадьба на 60–150 гостей в лофтах 1897 года в центре СПб. Своя кухня, выездная регистрация, прозрачные цены от 3 800 ₽/гость. Бронь без предоплаты.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://aurorahall.ru/">
+
+<!-- OpenGraph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Аврора Холл — камерный ресторан для свадьбы в центре Санкт-Петербурга">
+<meta property="og:description" content="Лофты 1897 года на Обводном канале, 60–150 гостей. Своя кухня, выездная регистрация, прозрачные пакеты от 3 800 ₽/гость.">
+<meta property="og:url" content="https://aurorahall.ru/">
+<meta property="og:image" content="https://aurorahall.ru/og-image.jpg">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:site_name" content="Аврора Холл">
+
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Аврора Холл — камерный ресторан для свадьбы в Санкт-Петербурге">
+<meta name="twitter:description" content="Лофты 1897 года, 60–150 гостей. Своя кухня. Выездная регистрация. Прозрачные пакеты.">
+
+<!-- Schema.org: Restaurant + LocalBusiness -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Restaurant",
+      "@id": "https://aurorahall.ru/#restaurant",
+      "name": "Аврора Холл",
+      "description": "Камерный ресторан для свадеб и торжеств в историческом центре Петербурга",
+      "url": "https://aurorahall.ru/",
+      "telephone": "+7-812-000-00-00",
+      "priceRange": "₽₽₽",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "ул. Чернышевского 24",
+        "addressLocality": "Санкт-Петербург",
+        "addressCountry": "RU",
+        "postalCode": "191123"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 59.9457,
+        "longitude": 30.3633
+      },
+      "servesCuisine": ["Европейская", "Русская"],
+      "acceptsReservations": "True",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "127",
+        "bestRating": "5"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question", "name": "Можно ли с алкоголем гостей?", "acceptedAnswer": {"@type": "Answer", "text": "Да, без пробкового сбора. У нас нет лицензии на крепкий алкоголь — это позволяет гостям приносить своё. Все базовые пакеты включают безалкогольные напитки."}},
+        {"@type": "Question", "name": "Можно ли провести регистрацию у вас?", "acceptedAnswer": {"@type": "Answer", "text": "Да, во внутреннем дворе. Регистрация юридическая (через выезд сотрудника ЗАГСа) — оформляем сами, пара только подписывает."}},
+        {"@type": "Question", "name": "На какую максимальную численность вы рассчитаны?", "acceptedAnswer": {"@type": "Answer", "text": "Два лофта: малый — на 60–80 гостей, большой — до 250. Фуршет с танцполом — до 350. Бронируем под ваш состав: камерная свадьба в малом или большой банкет в основном."}},
+        {"@type": "Question", "name": "Минимальный бюджет на свадьбу у вас?", "acceptedAnswer": {"@type": "Answer", "text": "Базовый пакет 60 гостей — от 228 000 ₽ (3 800 ₽/гость, включая зал, банкетное меню, безалкогольные напитки). Без минимума на гостей — есть мини-формат от 10 человек."}},
+        {"@type": "Question", "name": "За сколько надо бронировать?", "acceptedAnswer": {"@type": "Answer", "text": "Майские и сентябрьские субботы — за 6–9 месяцев. Будни и зимние даты — за 1–2 месяца. Без предоплаты при бронировании за 60+ дней."}}
+      ]
+    }
+  ]
+}
+</script>
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Header -->
+<header class="header" id="header">
+  <div class="container header-inner">
+    <a href="/" class="logo">Аврора <span>Холл</span></a>
+    <nav class="nav" id="nav">
+      <a href="#formats" class="nav-link">Форматы</a>
+      <a href="#hall" class="nav-link">Зал</a>
+      <a href="#tariffs" class="nav-link">Тарифы</a>
+      <a href="blog.html" class="nav-link">Блог</a>
+      <a href="#contact" class="btn btn-primary">Получить смету</a>
+    </nav>
+    <button class="nav-mobile-toggle" id="navToggle" aria-label="Меню">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="container hero-content">
+    <span class="hero-tag">Свадьбы и события в центре Санкт-Петербурга</span>
+    <h1>Свадьба в Петербурге, которая останется <em>в семейном альбоме</em></h1>
+    <p class="hero-lead">Лофты 1897 года на Обводном канале — бывшие винные склады. От 60 до 150 гостей, своя кухня, выездная регистрация во внутреннем дворе. Прозрачная смета без сюрпризов.</p>
+    <div class="hero-actions">
+      <a href="#hall" class="btn btn-primary btn-lg">Посмотреть зал</a>
+      <a href="#contact" class="btn btn-secondary btn-lg">Получить смету за 1 день</a>
+    </div>
+  </div>
+</section>
+
+<!-- Stats -->
+<section class="stats">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="fade-up">
+        <span class="stat-number">312</span>
+        <span class="stat-label">свадеб с 2020 года</span>
+      </div>
+      <div class="fade-up">
+        <span class="stat-number">4.9<em>/5</em></span>
+        <span class="stat-label">средняя оценка пар</span>
+      </div>
+      <div class="fade-up">
+        <span class="stat-number">24<em> ч</em></span>
+        <span class="stat-label">отклик на заявку</span>
+      </div>
+      <div class="fade-up">
+        <span class="stat-number">0<em> ₽</em></span>
+        <span class="stat-label">предоплата за 60+ дней</span>
+      </div>
+    </div>
+    <p class="stats-note">Мы не агрегатор и не сеть. Это один зал — со своим характером, командой и кухней. Нас выбирают те, кто хочет <em>свою</em> свадьбу, а не «как у всех».</p>
+  </div>
+</section>
+
+<!-- Formats -->
+<section id="formats">
+  <div class="container">
+    <span class="section-tag">Форматы</span>
+    <h2 class="section-title">Что у нас проходит</h2>
+    <p class="section-lead">Зал гибкий — масштабируется под разные форматы. Но главное у нас — свадьбы.</p>
+
+    <div class="formats-grid">
+      <div class="format-card fade-up">
+        <svg class="format-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M24 6c-6 0-12 4-12 12v24h24V18c0-8-6-12-12-12z"/>
+          <circle cx="24" cy="18" r="3"/>
+        </svg>
+        <h3>Свадьба</h3>
+        <p>Главный формат. Лофты на 60–150 гостей, выездная регистрация во внутреннем дворе-атриуме, авторское меню от шеф-повара.</p>
+        <a href="#tariffs" class="format-link">Подробнее</a>
+      </div>
+
+      <div class="format-card fade-up">
+        <svg class="format-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M8 16 L24 6 L40 16 V42 H8 Z"/>
+          <line x1="14" y1="42" x2="14" y2="22"/>
+          <line x1="34" y1="42" x2="34" y2="22"/>
+          <line x1="24" y1="42" x2="24" y2="22"/>
+        </svg>
+        <h3>Юбилей</h3>
+        <p>Для камерного юбилея 40, 50, 60+. Сценарий с ведущим, торт от кондитера, фото-зона с историей героя.</p>
+        <a href="#tariffs" class="format-link">Подробнее</a>
+      </div>
+
+      <div class="format-card fade-up">
+        <svg class="format-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M24 8 L42 18 L24 28 L6 18 Z"/>
+          <line x1="24" y1="28" x2="24" y2="42"/>
+          <path d="M12 22 V32 C12 36 17 40 24 40 C31 40 36 36 36 32 V22"/>
+        </svg>
+        <h3>Выпускной</h3>
+        <p>Старшие классы. Безопасная программа, согласование с родительским комитетом, фиксированный бюджет на ученика.</p>
+        <a href="#tariffs" class="format-link">Подробнее</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Hall -->
+<section class="hall" id="hall">
+  <div class="container">
+    <div class="hall-content">
+      <div class="fade-up">
+        <span class="section-tag">Пространство</span>
+        <h2>Один зал. Два этажа. Внутренний двор.</h2>
+        <p>Бывшие винные склады 1897 года на Обводном канале — теперь два лофта на 60–250 гостей. Сохранили кирпичные стены, балки, высокие окна — настоящий индустриальный лофт с историей. Внутренний двор-атриум — для выездной регистрации в любую погоду (есть прозрачная крыша).</p>
+        <ul class="hall-specs">
+          <li><span class="spec-label">Площадь зала</span><span class="spec-value">220 м²</span></li>
+          <li><span class="spec-label">Банкет</span><span class="spec-value">60–150 человек</span></li>
+          <li><span class="spec-label">Фуршет</span><span class="spec-value">до 110 человек</span></li>
+          <li><span class="spec-label">Высота потолков</span><span class="spec-value">4,2 м</span></li>
+          <li><span class="spec-label">Парковка</span><span class="spec-value">12 машино-мест во дворе</span></li>
+          <li><span class="spec-label">Метро</span><span class="spec-value">Чернышевская, 5 мин</span></li>
+        </ul>
+      </div>
+      <div class="hall-image fade-up" aria-label="Историческое здание зала">
+        <span>Фото зала</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Tariffs -->
+<section class="tariffs" id="tariffs">
+  <div class="container">
+    <span class="section-tag">Тарифы</span>
+    <h2 class="section-title">Три прозрачных пакета. Без «от» и звёздочек.</h2>
+    <p class="section-lead">Цены — фиксированные. Что в пакете — то и в смете. Никаких «уточним по факту».</p>
+
+    <div class="tariffs-table">
+      <table>
+        <thead>
+          <tr>
+            <th></th>
+            <th>Базовый</th>
+            <th class="tariff-popular">Премиум</th>
+            <th>Под ключ</th>
+          </tr>
+          <tr class="price-row">
+            <td>Цена за гостя</td>
+            <td>3 800 ₽</td>
+            <td class="tariff-popular">5 800 ₽</td>
+            <td>8 500 ₽</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Аренда зала</td>
+            <td class="check">включена</td>
+            <td class="tariff-popular check">включена</td>
+            <td class="check">включена</td>
+          </tr>
+          <tr>
+            <td>Банкетное меню</td>
+            <td>6 блюд</td>
+            <td class="tariff-popular">9 блюд</td>
+            <td>12 блюд + дегустация</td>
+          </tr>
+          <tr>
+            <td>Безалкогольные напитки</td>
+            <td>базовые</td>
+            <td class="tariff-popular">расширенные</td>
+            <td>премиум-линейка</td>
+          </tr>
+          <tr>
+            <td>Свой алкоголь</td>
+            <td class="check">да</td>
+            <td class="tariff-popular check">да</td>
+            <td class="check">да + бар включён</td>
+          </tr>
+          <tr>
+            <td>Выездная регистрация</td>
+            <td>+25 000 ₽</td>
+            <td class="tariff-popular check">включена</td>
+            <td class="check">включена</td>
+          </tr>
+          <tr>
+            <td>Координатор</td>
+            <td>за доплату</td>
+            <td class="tariff-popular check">включён</td>
+            <td class="check">+ ведущий</td>
+          </tr>
+          <tr>
+            <td>Декор стола</td>
+            <td>базовый</td>
+            <td class="tariff-popular">премиум</td>
+            <td>под концепцию</td>
+          </tr>
+          <tr>
+            <td>Фотозона</td>
+            <td>стандарт</td>
+            <td class="tariff-popular">тематическая</td>
+            <td>под концепцию</td>
+          </tr>
+          <tr>
+            <td>Торт</td>
+            <td>+от 4 000 ₽</td>
+            <td class="tariff-popular">включён, 4 кг</td>
+            <td>включён, любой 6 кг</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="tariffs-cta">
+      <a href="#contact" class="btn btn-primary btn-lg">Запросить смету под свою дату</a>
+    </div>
+  </div>
+</section>
+
+<!-- Reviews -->
+<section class="reviews">
+  <div class="container">
+    <span class="section-tag">Отзывы</span>
+    <h2 class="section-title">Три пары — три разных свадьбы</h2>
+    <p class="section-lead">Реальные истории молодожёнов 2024–2025 годов. С их разрешения.</p>
+
+    <div class="reviews-grid">
+      <article class="review fade-up">
+        <p class="review-quote">«Хотели камерную свадьбу на 35 человек, без таммады, без шумных конкурсов. Команда Авроры предложила вечер с живым джазом и outdoor-регистрацией. Получилось ровно то, что мы хотели.»</p>
+        <div class="review-author">
+          <div class="review-avatar">А</div>
+          <div>
+            <div class="review-name">Анна и Дмитрий</div>
+            <div class="review-date">Август 2025</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="review fade-up">
+        <p class="review-quote">«Свадьба на 60 человек, бюджет был ограничен. Менеджер Юля сразу показала разбивку, объяснила, на чём можно сэкономить, а на чём — точно нет. Спасибо за честность.»</p>
+        <div class="review-author">
+          <div class="review-avatar">Е</div>
+          <div>
+            <div class="review-name">Екатерина и Артём</div>
+            <div class="review-date">Май 2025</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="review fade-up">
+        <p class="review-quote">«Думали про загород, но логистика для гостей из других городов казалась сложной. Аврора в центре оказалась идеальным решением — отель Эрмитаж в 5 минутах пешком.»</p>
+        <div class="review-author">
+          <div class="review-avatar">М</div>
+          <div>
+            <div class="review-name">Мария и Илья</div>
+            <div class="review-date">Октябрь 2024</div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq">
+  <div class="container">
+    <span class="section-tag">Вопросы</span>
+    <h2 class="section-title">Часто спрашивают</h2>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-question">Можно ли с алкоголем гостей?</div>
+        <div class="faq-answer">Да, без пробкового сбора. У нас нет лицензии на крепкий алкоголь — это позволяет гостям приносить своё. Все базовые пакеты включают безалкогольные напитки; полную линейку (включая премиум) делаем по запросу.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">Можно ли провести регистрацию у вас?</div>
+        <div class="faq-answer">Да, во внутреннем дворе. Регистрация юридическая (через выезд сотрудника ЗАГСа) — оформляем сами, пара только подписывает.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">На какую максимальную численность вы рассчитаны?</div>
+        <div class="faq-answer">Два лофта: малый — на 60–80 гостей, большой — до 250. Фуршет с танцполом — до 350. Бронируем под ваш состав: камерная свадьба в малом лофте или большой банкет в основном.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">Минимальный бюджет на свадьбу у вас?</div>
+        <div class="faq-answer">Базовый пакет 60 гостей — от 228 000 ₽ (3 800 ₽/гость, включая зал, банкетное меню, безалкогольные напитки). Аренда зала без минимума на гостей — есть отдельный мини-формат от 10 человек.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">За сколько надо бронировать?</div>
+        <div class="faq-answer">Майские и сентябрьские субботы — за 6–9 месяцев. Будни и зимние даты — за 1–2 месяца. Без предоплаты при бронировании за 60+ дней.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">Что с парковкой для гостей?</div>
+        <div class="faq-answer">12 мест во дворе, ещё около 40 на близлежащих улицах. Можем заказать трансфер от метро Чернышевская.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <div>
+        <span class="section-tag">Заявка</span>
+        <h2>Расскажите про вашу свадьбу</h2>
+        <p class="contact-lead">Получите смету под вашу дату за 24 часа. Без звонков-роботов и обзвонов.</p>
+        <div class="contact-info">
+          <strong>Адрес</strong>
+          ул. Чернышевского 24, Санкт-Петербург<br>
+          (5 минут от метро Чернышевская)
+
+          <strong>Телефон</strong>
+          +7 (812) 000-00-00<br>
+          ежедневно с 10:00 до 21:00
+
+          <strong>Telegram</strong>
+          @aurorahall_spb
+
+          <strong>Email</strong>
+          hello@aurorahall.ru
+        </div>
+      </div>
+
+      <form class="form-card" id="contactForm">
+        <div class="form-field">
+          <label class="form-label" for="name">Имя пары</label>
+          <input class="form-input" type="text" id="name" name="name" placeholder="Например: Анна и Дмитрий" required>
+        </div>
+        <div class="form-field">
+          <label class="form-label" for="contact">Телефон или Telegram</label>
+          <input class="form-input" type="text" id="contact" name="contact" placeholder="+7 или @username" required>
+        </div>
+        <div class="form-row">
+          <div class="form-field">
+            <label class="form-label" for="date">Желаемая дата</label>
+            <input class="form-input" type="date" id="date" name="date">
+          </div>
+          <div class="form-field">
+            <label class="form-label" for="guests">Число гостей</label>
+            <input class="form-input" type="number" id="guests" name="guests" placeholder="60–150" min="10" max="350">
+          </div>
+        </div>
+        <div class="form-field">
+          <label class="form-label" for="message">Что важно знать? (необязательно)</label>
+          <textarea class="form-textarea" id="message" name="message" placeholder="Особые пожелания, аллергии гостей, концепция…" maxlength="500"></textarea>
+        </div>
+        <button class="form-submit" type="submit" id="submitBtn">Отправить заявку</button>
+        <div class="form-status" id="formStatus"></div>
+        <p class="form-note">Заявка приходит лично руководителю зала. Отвечаем в течение суток.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">Аврора <span>Холл</span></div>
+        <p class="footer-tagline">Камерный ресторан для свадеб и торжеств в историческом центре Санкт-Петербурга. Один зал — со своим характером.</p>
+      </div>
+      <div>
+        <h4 class="footer-heading">Форматы</h4>
+        <ul class="footer-list">
+          <li><a href="#formats">Свадьбы</a></li>
+          <li><a href="#formats">Юбилеи</a></li>
+          <li><a href="#formats">Выпускные</a></li>
+          <li><a href="#tariffs">Тарифы</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-heading">Информация</h4>
+        <ul class="footer-list">
+          <li><a href="blog.html">Блог</a></li>
+          <li><a href="#hall">Зал</a></li>
+          <li><a href="#contact">Контакты</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Аврора Холл. Демонстрационный проект.</span>
+      <span class="demo-badge">DEMO</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
