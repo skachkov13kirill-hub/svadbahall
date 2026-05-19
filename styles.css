@@ -1279,3 +1279,42 @@ section {
     grid-template-columns: 1fr;
   }
 }
+
+/* ===== Контакты: строки с иконкой ===== */
+
+.contact-row {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(250, 248, 245, 0.08);
+}
+
+.contact-row:last-child {
+  border-bottom: none;
+}
+
+.contact-row strong {
+  margin-top: 0;
+  margin-bottom: 2px;
+}
+
+.contact-icon {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+  color: var(--color-accent);
+  margin-top: 4px;
+}
+
+.contact-info a {
+  color: var(--color-bg);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(201, 169, 97, 0.4);
+  transition: border-color var(--transition), color var(--transition);
+}
+
+.contact-info a:hover {
+  color: var(--color-accent);
+  border-bottom-color: var(--color-accent);
+}
