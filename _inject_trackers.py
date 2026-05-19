@@ -49,9 +49,15 @@ def process(path: Path) -> str:
     return action
 
 
+def is_verification_file(path: Path) -> bool:
+    name = path.name.lower()
+    return name.startswith("yandex_") or name.startswith("google") and name.endswith(".html") and "verification" in path.read_text(encoding="utf-8", errors="ignore").lower()
+
+
 def main():
-    html_files = list(SITE_DIR.glob("*.html")) + list((SITE_DIR / "articles").glob("*.html"))
-    print(f"Processing {len(html_files)} HTML files")
+    all_html = list(SITE_DIR.glob("*.html")) + list((SITE_DIR / "articles").glob("*.html"))
+    html_files = [f for f in all_html if not (f.name.lower().startswith("yandex_") or f.name.lower().startswith("google"))]
+    print(f"Processing {len(html_files)} HTML files (skipped {len(all_html) - len(html_files)} verification files)")
     print(f"  GSC: {GSC}")
     print(f"  YV:  {YV}")
     print(f"  YM:  {YM}")
