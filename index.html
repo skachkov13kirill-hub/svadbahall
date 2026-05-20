@@ -6,14 +6,14 @@
 <title>Аврора Холл — камерный ресторан для свадьбы в центре Санкт-Петербурга</title>
 <meta name="description" content="Свадьба на 60–150 гостей в лофтах 1897 года в центре СПб. Своя кухня, выездная регистрация, прозрачные цены от 3 800 ₽/гость. Бронь без предоплаты.">
 <meta name="robots" content="index, follow">
-<link rel="canonical" href="https://aurorahall.ru/">
+<link rel="canonical" href="https://svadbahall.ru/">
 
 <!-- OpenGraph -->
 <meta property="og:type" content="website">
 <meta property="og:title" content="Аврора Холл — камерный ресторан для свадьбы в центре Санкт-Петербурга">
 <meta property="og:description" content="Лофты 1897 года на Обводном канале, 60–150 гостей. Своя кухня, выездная регистрация, прозрачные пакеты от 3 800 ₽/гость.">
-<meta property="og:url" content="https://aurorahall.ru/">
-<meta property="og:image" content="https://aurorahall.ru/og-image.jpg">
+<meta property="og:url" content="https://svadbahall.ru/">
+<meta property="og:image" content="https://svadbahall.ru/og-image.jpg">
 <meta property="og:locale" content="ru_RU">
 <meta property="og:site_name" content="Аврора Холл">
 
@@ -22,22 +22,66 @@
 <meta name="twitter:title" content="Аврора Холл — камерный ресторан для свадьбы в Санкт-Петербурге">
 <meta name="twitter:description" content="Лофты 1897 года, 60–150 гостей. Своя кухня. Выездная регистрация. Прозрачные пакеты.">
 
-<!-- Schema.org: Restaurant + LocalBusiness -->
+<!-- Schema.org: Organization + Restaurant + WebSite + BreadcrumbList + FAQPage -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Restaurant",
-      "@id": "https://aurorahall.ru/#restaurant",
+      "@type": "Organization",
+      "@id": "https://svadbahall.ru/#org",
       "name": "Аврора Холл",
-      "description": "Камерный ресторан для свадеб и торжеств в историческом центре Петербурга",
-      "url": "https://aurorahall.ru/",
+      "alternateName": "Aurora Hall",
+      "url": "https://svadbahall.ru/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://svadbahall.ru/og-image.jpg",
+        "width": 1200,
+        "height": 630
+      },
       "telephone": "+7-999-568-34-22",
-      "priceRange": "₽₽₽",
+      "email": "hello@svadbahall.ru",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "ул. Чернышевского 24",
+        "streetAddress": "ул. Чернышевского, 24",
+        "addressLocality": "Санкт-Петербург",
+        "addressRegion": "Санкт-Петербург",
+        "addressCountry": "RU",
+        "postalCode": "191123"
+      },
+      "sameAs": [
+        "https://t.me/aurorahall_spb"
+      ],
+      "knowsAbout": [
+        "Свадебный банкет",
+        "Выездная регистрация",
+        "Свадебный лофт",
+        "Корпоративные мероприятия",
+        "Юбилей",
+        "Свадебное меню",
+        "Тайминг свадьбы"
+      ],
+      "areaServed": {
+        "@type": "City",
+        "name": "Санкт-Петербург"
+      }
+    },
+    {
+      "@type": ["Restaurant", "LocalBusiness", "EventVenue"],
+      "@id": "https://svadbahall.ru/#restaurant",
+      "name": "Аврора Холл",
+      "description": "Камерный ресторан для свадеб и торжеств в историческом центре Петербурга. Лофты 1897 года, своя кухня, выездная регистрация. 60–150 гостей.",
+      "url": "https://svadbahall.ru/",
+      "telephone": "+7-999-568-34-22",
+      "priceRange": "₽₽₽",
+      "image": [
+        "https://images.unsplash.com/photo-1762765685319-fdaf8d22085d?w=1400&q=80&auto=format&fit=crop"
+      ],
+      "logo": {"@id": "https://svadbahall.ru/#org"},
+      "parentOrganization": {"@id": "https://svadbahall.ru/#org"},
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "ул. Чернышевского, 24",
         "addressLocality": "Санкт-Петербург",
         "addressCountry": "RU",
         "postalCode": "191123"
@@ -47,14 +91,72 @@
         "latitude": 59.9457,
         "longitude": 30.3633
       },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+          "opens": "10:00",
+          "closes": "23:00"
+        }
+      ],
       "servesCuisine": ["Европейская", "Русская"],
-      "acceptsReservations": "True",
+      "acceptsReservations": true,
+      "amenityFeature": [
+        {"@type": "LocationFeatureSpecification", "name": "Выездная регистрация во внутреннем дворе", "value": true},
+        {"@type": "LocationFeatureSpecification", "name": "Свой алкоголь без пробкового сбора", "value": true},
+        {"@type": "LocationFeatureSpecification", "name": "Своя кухня и шеф-повар", "value": true},
+        {"@type": "LocationFeatureSpecification", "name": "Парковка во дворе", "value": "12 машино-мест"},
+        {"@type": "LocationFeatureSpecification", "name": "Метро Чернышевская", "value": "5 минут пешком"}
+      ],
+      "maximumAttendeeCapacity": 250,
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "4.9",
         "reviewCount": "127",
-        "bestRating": "5"
-      }
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "makesOffer": [
+        {
+          "@type": "Offer",
+          "name": "Пакет «Базовый»",
+          "description": "60+ гостей, аренда зала, банкетное меню 6 блюд, безалкогольные напитки",
+          "price": "3800",
+          "priceCurrency": "RUB",
+          "eligibleQuantity": {"@type": "QuantitativeValue", "minValue": 60, "unitText": "гость"}
+        },
+        {
+          "@type": "Offer",
+          "name": "Пакет «Премиум»",
+          "description": "Меню 9 блюд, выездная регистрация, координатор, торт 4 кг",
+          "price": "5800",
+          "priceCurrency": "RUB",
+          "eligibleQuantity": {"@type": "QuantitativeValue", "minValue": 60, "unitText": "гость"}
+        },
+        {
+          "@type": "Offer",
+          "name": "Пакет «Под ключ»",
+          "description": "Меню 12 блюд + дегустация, ведущий, торт под концепцию",
+          "price": "8500",
+          "priceCurrency": "RUB",
+          "eligibleQuantity": {"@type": "QuantitativeValue", "minValue": 60, "unitText": "гость"}
+        }
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://svadbahall.ru/#website",
+      "url": "https://svadbahall.ru/",
+      "name": "Аврора Холл",
+      "inLanguage": "ru-RU",
+      "publisher": {"@id": "https://svadbahall.ru/#org"}
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://svadbahall.ru/#breadcrumb",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Главная", "item": "https://svadbahall.ru/"}
+      ]
     },
     {
       "@type": "FAQPage",
@@ -78,7 +180,7 @@
 <link rel="stylesheet" href="styles.css">
 <!-- TRACKERS:START -->
 <meta name="google-site-verification" content="O4fIYN0zE3mLWUhRMlkTczJyHT1WVu0TylnLdCilCFQ">
-<meta name="yandex-verification" content="REPLACE_WITH_YV_TOKEN">
+<!-- yandex-verification: подтверждено через HTML-файл, meta-тег не нужен -->
 <script>(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
 m[i].l=1*new Date();
 for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
@@ -98,6 +200,7 @@ ym(109298363, "init", {clickmap:true, trackLinks:true, accurateTrackBounce:true,
       <a href="#formats" class="nav-link">Форматы</a>
       <a href="#hall" class="nav-link">Зал</a>
       <a href="#tariffs" class="nav-link">Тарифы</a>
+      <a href="calculator.html" class="nav-link">Калькулятор</a>
       <a href="blog.html" class="nav-link">Блог</a>
       <a href="#contact" class="btn btn-primary">Получить смету</a>
     </nav>
@@ -407,7 +510,7 @@ ym(109298363, "init", {clickmap:true, trackLinks:true, accurateTrackBounce:true,
           </div>
           <div class="contact-row">
             <strong>Email</strong>
-            <a href="mailto:hello@aurorahall.ru">hello@aurorahall.ru</a><br>
+            <a href="mailto:hello@svadbahall.ru">hello@svadbahall.ru</a><br>
             для подробных запросов и смет
           </div>
         </div>

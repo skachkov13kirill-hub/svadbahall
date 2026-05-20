@@ -6,12 +6,93 @@
 <title>Блог — как готовиться к свадьбе в Петербурге | Аврора Холл</title>
 <meta name="description" content="Реальные чек-листы и гиды для пар, готовящих свадьбу в СПб. Бюджеты, форматы, выездная регистрация, советы команды зала.">
 <meta name="robots" content="index, follow">
-<link rel="canonical" href="https://aurorahall.ru/blog.html">
+<link rel="canonical" href="https://svadbahall.ru/blog.html">
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="Блог Аврора Холл — гиды по подготовке свадьбы">
 <meta property="og:description" content="Реальные чек-листы, бюджеты, советы от команды зала.">
-<meta property="og:url" content="https://aurorahall.ru/blog.html">
+<meta property="og:url" content="https://svadbahall.ru/blog.html">
+
+<!-- Schema.org: CollectionPage для каждого кластера -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Blog",
+      "@id": "https://svadbahall.ru/blog.html#blog",
+      "url": "https://svadbahall.ru/blog.html",
+      "name": "Блог Аврора Холл — гиды по подготовке свадьбы в СПб",
+      "description": "Реальные чек-листы и гиды для пар, готовящих свадьбу в СПб.",
+      "inLanguage": "ru-RU",
+      "publisher": {"@id": "https://svadbahall.ru/#org"}
+    },
+    {
+      "@type": "CollectionPage",
+      "@id": "https://svadbahall.ru/blog.html#budgets",
+      "name": "Свадебные бюджеты по числу гостей",
+      "url": "https://svadbahall.ru/blog.html#budgets",
+      "isPartOf": {"@id": "https://svadbahall.ru/blog.html#blog"},
+      "mainEntity": {
+        "@type": "ItemList",
+        "itemListElement": [
+          {"@type":"ListItem","position":1,"url":"https://svadbahall.ru/articles/svadebnyy-banket-na-30-chelovek-spb.html","name":"Свадебный банкет на 30 человек в Петербурге"},
+          {"@type":"ListItem","position":2,"url":"https://svadbahall.ru/articles/svadebnyy-banket-na-80-chelovek-spb.html","name":"Свадьба на 80 человек в СПб: реальный бюджет 2026"},
+          {"@type":"ListItem","position":3,"url":"https://svadbahall.ru/articles/svadebnyy-banket-na-100-chelovek-spb.html","name":"Свадьба на 100 человек в СПб: бюджет 2026, площадки"}
+        ]
+      }
+    },
+    {
+      "@type": "CollectionPage",
+      "@id": "https://svadbahall.ru/blog.html#formats",
+      "name": "Форматы и площадки свадьбы",
+      "url": "https://svadbahall.ru/blog.html#formats",
+      "isPartOf": {"@id": "https://svadbahall.ru/blog.html#blog"},
+      "mainEntity": {
+        "@type": "ItemList",
+        "itemListElement": [
+          {"@type":"ListItem","position":1,"url":"https://svadbahall.ru/articles/svadebnyy-loft-spb.html","name":"Свадебный лофт в Санкт-Петербурге: 7 форматов"},
+          {"@type":"ListItem","position":2,"url":"https://svadbahall.ru/articles/svadba-v-lofte-1897-spb.html","name":"Свадьба в лофте 1897 года: бывшие винные склады"},
+          {"@type":"ListItem","position":3,"url":"https://svadbahall.ru/articles/vyezdnaya-registratsia.html","name":"Выездная регистрация в ресторане"},
+          {"@type":"ListItem","position":4,"url":"https://svadbahall.ru/articles/6-prichin-zimney-svadby-spb.html","name":"6 причин не бояться зимней свадьбы в СПб"},
+          {"@type":"ListItem","position":5,"url":"https://svadbahall.ru/articles/5-formatov-vtorogo-dnya-svadby.html","name":"5 форматов второго дня свадьбы в СПб"}
+        ]
+      }
+    },
+    {
+      "@type": "CollectionPage",
+      "@id": "https://svadbahall.ru/blog.html#planning",
+      "name": "Подготовка и чек-листы",
+      "url": "https://svadbahall.ru/blog.html#planning",
+      "isPartOf": {"@id": "https://svadbahall.ru/blog.html#blog"},
+      "mainEntity": {
+        "@type": "ItemList",
+        "itemListElement": [
+          {"@type":"ListItem","position":1,"url":"https://svadbahall.ru/articles/timing-svadebnogo-dnya-spb.html","name":"Тайминг свадебного дня"},
+          {"@type":"ListItem","position":2,"url":"https://svadbahall.ru/articles/7-fishek-vybora-svadebnogo-restorana.html","name":"7 фишек выбора свадебного ресторана"},
+          {"@type":"ListItem","position":3,"url":"https://svadbahall.ru/articles/8-oshibok-pri-vybore-banketnogo-zala.html","name":"8 ошибок при выборе банкетного зала в СПб"},
+          {"@type":"ListItem","position":4,"url":"https://svadbahall.ru/articles/svadebnoe-menu-12-oshibok.html","name":"Свадебное меню: 12 ошибок при составлении"}
+        ]
+      }
+    },
+    {
+      "@type": "CollectionPage",
+      "@id": "https://svadbahall.ru/blog.html#events",
+      "name": "Корпоративы и юбилеи",
+      "url": "https://svadbahall.ru/blog.html#events",
+      "isPartOf": {"@id": "https://svadbahall.ru/blog.html#blog"},
+      "mainEntity": {
+        "@type": "ItemList",
+        "itemListElement": [
+          {"@type":"ListItem","position":1,"url":"https://svadbahall.ru/articles/korporativ-50-chelovek-spb.html","name":"Корпоратив на 50 человек в СПб"},
+          {"@type":"ListItem","position":2,"url":"https://svadbahall.ru/articles/novogodniy-korporativ-80-chelovek-spb.html","name":"Новогодний корпоратив 80 человек в СПб"},
+          {"@type":"ListItem","position":3,"url":"https://svadbahall.ru/articles/yubiley-50-let-restoran-spb.html","name":"Юбилей 50 лет в ресторане Петербурга"}
+        ]
+      }
+    }
+  ]
+}
+</script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,7 +100,7 @@
 <link rel="stylesheet" href="styles.css">
 <!-- TRACKERS:START -->
 <meta name="google-site-verification" content="O4fIYN0zE3mLWUhRMlkTczJyHT1WVu0TylnLdCilCFQ">
-<meta name="yandex-verification" content="REPLACE_WITH_YV_TOKEN">
+<!-- yandex-verification: подтверждено через HTML-файл, meta-тег не нужен -->
 <script>(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
 m[i].l=1*new Date();
 for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
@@ -55,111 +136,126 @@ ym(109298363, "init", {clickmap:true, trackLinks:true, accurateTrackBounce:true,
   </div>
 </section>
 
-<section>
+<section id="budgets" data-cluster="budgets">
   <div class="container">
+    <span class="section-tag">Бюджеты по числу гостей</span>
+    <h2 class="section-title">Сколько стоит свадьба на 30, 80 и 100 человек</h2>
     <div class="blog-grid">
-      <a href="articles/svadebnyy-banket-na-30-chelovek-spb.html" class="blog-card">
+      <a href="articles/svadebnyy-banket-na-30-chelovek-spb.html" class="blog-card" data-cluster="budgets">
         <div class="blog-card-tag">Чек-лист</div>
-        <h2>Свадебный банкет на 30 человек в Петербурге: реальный чек-лист 2026</h2>
+        <h3>Свадебный банкет на 30 человек в Петербурге: реальный чек-лист 2026</h3>
         <p>Реальные цены, чек-лист подготовки за 6 месяцев, на чём можно сэкономить и на чём нет. Без шаблонов — из опыта 312 свадеб.</p>
         <span class="format-link">Читать</span>
       </a>
-
-      <a href="articles/svadebnyy-loft-spb.html" class="blog-card">
-        <div class="blog-card-tag">Гид</div>
-        <h2>Свадебный лофт в Санкт-Петербурге: 7 форматов</h2>
-        <p>Индустриальный, скандинавский, винтажный, минимализм, эклектика, атриум, classic-loft — кому какой подходит и сколько стоит в 2026.</p>
-        <span class="format-link">Читать</span>
-      </a>
-
-      <a href="articles/vyezdnaya-registratsia.html" class="blog-card">
-        <div class="blog-card-tag">Практика</div>
-        <h2>Выездная регистрация в ресторане: что нужно знать паре</h2>
-        <p>Юридическая или символическая — в чём разница, сколько стоит, какие площадки разрешены ЗАГСом, чек-лист подготовки и частые ошибки.</p>
-        <span class="format-link">Читать</span>
-      </a>
-
-      <a href="articles/timing-svadebnogo-dnya-spb.html" class="blog-card">
-        <div class="blog-card-tag">Пошаговый план</div>
-        <h2>Тайминг свадебного дня: расписание от 10:00 до 02:00</h2>
-        <p>Готовое расписание свадьбы по часам с разбором каждого блока. Где обычно ломается план и как закладывать резерв.</p>
-        <span class="format-link">Читать</span>
-      </a>
-
-      <a href="articles/svadebnyy-banket-na-80-chelovek-spb.html" class="blog-card">
+      <a href="articles/svadebnyy-banket-na-80-chelovek-spb.html" class="blog-card" data-cluster="budgets">
         <div class="blog-card-tag">Бюджет и чек-лист</div>
-        <h2>Свадьба на 80 человек в СПб: реальный бюджет 2026</h2>
+        <h3>Свадьба на 80 человек в СПб: реальный бюджет 2026</h3>
         <p>Самый востребованный размер свадьбы (38% рынка СПб). Цены, смета из 15 пунктов, на чём сэкономить, частые ошибки.</p>
         <span class="format-link">Читать</span>
       </a>
-
-      <a href="articles/svadebnyy-banket-na-100-chelovek-spb.html" class="blog-card">
+      <a href="articles/svadebnyy-banket-na-100-chelovek-spb.html" class="blog-card" data-cluster="budgets">
         <div class="blog-card-tag">Большая свадьба</div>
-        <h2>Свадьба на 100 человек в СПб: бюджет 2026, площадки</h2>
+        <h3>Свадьба на 100 человек в СПб: бюджет 2026, площадки</h3>
         <p>Что меняется на 100 vs 80 — логистика, персонал, выбор зала. Реальные цены до 1,5 млн ₽.</p>
         <span class="format-link">Читать</span>
       </a>
+    </div>
+  </div>
+</section>
 
-      <a href="articles/svadba-v-lofte-1897-spb.html" class="blog-card">
+<section id="formats" data-cluster="formats">
+  <div class="container">
+    <span class="section-tag">Форматы и площадки</span>
+    <h2 class="section-title">Какой зал и формат подходит вашей паре</h2>
+    <div class="blog-grid">
+      <a href="articles/svadebnyy-loft-spb.html" class="blog-card" data-cluster="formats">
+        <div class="blog-card-tag">Гид</div>
+        <h3>Свадебный лофт в Санкт-Петербурге: 7 форматов</h3>
+        <p>Индустриальный, скандинавский, винтажный, минимализм, эклектика, атриум, classic-loft — кому какой подходит и сколько стоит в 2026.</p>
+        <span class="format-link">Читать</span>
+      </a>
+      <a href="articles/svadba-v-lofte-1897-spb.html" class="blog-card" data-cluster="formats">
         <div class="blog-card-tag">История и атмосфера</div>
-        <h2>Свадьба в лофте 1897 года: бывшие винные склады</h2>
+        <h3>Свадьба в лофте 1897 года: бывшие винные склады</h3>
         <p>Чем исторический лофт отличается от современного «лофта-имитации». Цены, плюсы, минусы.</p>
         <span class="format-link">Читать</span>
       </a>
-
-      <a href="articles/korporativ-50-chelovek-spb.html" class="blog-card">
-        <div class="blog-card-tag">Корпоративы</div>
-        <h2>Корпоратив на 50 человек в СПб: бюджет, форматы 2026</h2>
-        <p>Три рабочих формата для среднего бизнеса. Где обычно теряют деньги. Когда выгоднее проводить.</p>
+      <a href="articles/vyezdnaya-registratsia.html" class="blog-card" data-cluster="formats">
+        <div class="blog-card-tag">Практика</div>
+        <h3>Выездная регистрация в ресторане: что нужно знать паре</h3>
+        <p>Юридическая или символическая — в чём разница, сколько стоит, какие площадки разрешены ЗАГСом, чек-лист подготовки и частые ошибки.</p>
         <span class="format-link">Читать</span>
       </a>
-
-      <a href="articles/novogodniy-korporativ-80-chelovek-spb.html" class="blog-card">
-        <div class="blog-card-tag">Сезонные мероприятия</div>
-        <h2>Новогодний корпоратив 80 человек в СПб: декабрь 2026</h2>
-        <p>Пиковый месяц для HR. Бюджет, форматы, когда бронировать чтобы успеть, частые ошибки.</p>
+      <a href="articles/6-prichin-zimney-svadby-spb.html" class="blog-card" data-cluster="formats">
+        <div class="blog-card-tag">Сезонное</div>
+        <h3>6 причин не бояться зимней свадьбы в СПб</h3>
+        <p>Дешевле на 25%, свободные даты, атмосферные фото. Зима в Петербурге — недооценённый формат.</p>
         <span class="format-link">Читать</span>
       </a>
-
-      <a href="articles/yubiley-50-let-restoran-spb.html" class="blog-card">
-        <div class="blog-card-tag">Юбилеи</div>
-        <h2>Юбилей 50 лет в ресторане Петербурга: сценарий, бюджет</h2>
-        <p>Реальный бюджет 200-400k, сценарий вечера на 4-6 часов, где обычно теряют деньги.</p>
-        <span class="format-link">Читать</span>
-      </a>
-
-      <a href="articles/8-oshibok-pri-vybore-banketnogo-zala.html" class="blog-card">
-        <div class="blog-card-tag">ТОП-8</div>
-        <h2>8 ошибок при выборе банкетного зала в СПб</h2>
-        <p>Что проверить ДО подписания договора. 10 вопросов менеджеру, на которые обязательно нужны ответы.</p>
-        <span class="format-link">Читать</span>
-      </a>
-
-      <a href="articles/7-fishek-vybora-svadebnogo-restorana.html" class="blog-card">
-        <div class="blog-card-tag">ТОП-7</div>
-        <h2>7 фишек, на которые смотрят при выборе свадебного ресторана</h2>
-        <p>Критерии, отличающие хорошую площадку от просто красивой картинки на фото.</p>
-        <span class="format-link">Читать</span>
-      </a>
-
-      <a href="articles/5-formatov-vtorogo-dnya-svadby.html" class="blog-card">
+      <a href="articles/5-formatov-vtorogo-dnya-svadby.html" class="blog-card" data-cluster="formats">
         <div class="blog-card-tag">ТОП-5</div>
-        <h2>5 форматов второго дня свадьбы в СПб</h2>
+        <h3>5 форматов второго дня свадьбы в СПб</h3>
         <p>Когда нужен второй день, кого приглашать, какие варианты работают. Бюджеты 30-100k.</p>
         <span class="format-link">Читать</span>
       </a>
+    </div>
+  </div>
+</section>
 
-      <a href="articles/svadebnoe-menu-12-oshibok.html" class="blog-card">
+<section id="planning" data-cluster="planning">
+  <div class="container">
+    <span class="section-tag">Подготовка и чек-листы</span>
+    <h2 class="section-title">Что проверить заранее, чтобы не переплатить и не нервничать</h2>
+    <div class="blog-grid">
+      <a href="articles/timing-svadebnogo-dnya-spb.html" class="blog-card" data-cluster="planning">
+        <div class="blog-card-tag">Пошаговый план</div>
+        <h3>Тайминг свадебного дня: расписание от 10:00 до 02:00</h3>
+        <p>Готовое расписание свадьбы по часам с разбором каждого блока. Где обычно ломается план и как закладывать резерв.</p>
+        <span class="format-link">Читать</span>
+      </a>
+      <a href="articles/7-fishek-vybora-svadebnogo-restorana.html" class="blog-card" data-cluster="planning">
+        <div class="blog-card-tag">ТОП-7</div>
+        <h3>7 фишек, на которые смотрят при выборе свадебного ресторана</h3>
+        <p>Критерии, отличающие хорошую площадку от просто красивой картинки на фото.</p>
+        <span class="format-link">Читать</span>
+      </a>
+      <a href="articles/8-oshibok-pri-vybore-banketnogo-zala.html" class="blog-card" data-cluster="planning">
+        <div class="blog-card-tag">ТОП-8</div>
+        <h3>8 ошибок при выборе банкетного зала в СПб</h3>
+        <p>Что проверить ДО подписания договора. 10 вопросов менеджеру, на которые обязательно нужны ответы.</p>
+        <span class="format-link">Читать</span>
+      </a>
+      <a href="articles/svadebnoe-menu-12-oshibok.html" class="blog-card" data-cluster="planning">
         <div class="blog-card-tag">ТОП-12</div>
-        <h2>Свадебное меню: 12 ошибок при составлении</h2>
+        <h3>Свадебное меню: 12 ошибок при составлении</h3>
         <p>Как считать объёмы, что обязательно учесть, на чём гости не доедают.</p>
         <span class="format-link">Читать</span>
       </a>
+    </div>
+  </div>
+</section>
 
-      <a href="articles/6-prichin-zimney-svadby-spb.html" class="blog-card">
-        <div class="blog-card-tag">Сезонное</div>
-        <h2>6 причин не бояться зимней свадьбы в СПб</h2>
-        <p>Дешевле на 25%, свободные даты, атмосферные фото. Зима в Петербурге — недооценённый формат.</p>
+<section id="events" data-cluster="events">
+  <div class="container">
+    <span class="section-tag">Корпоративы и юбилеи</span>
+    <h2 class="section-title">Не свадебные форматы в том же зале</h2>
+    <div class="blog-grid">
+      <a href="articles/korporativ-50-chelovek-spb.html" class="blog-card" data-cluster="events">
+        <div class="blog-card-tag">Корпоративы</div>
+        <h3>Корпоратив на 50 человек в СПб: бюджет, форматы 2026</h3>
+        <p>Три рабочих формата для среднего бизнеса. Где обычно теряют деньги. Когда выгоднее проводить.</p>
+        <span class="format-link">Читать</span>
+      </a>
+      <a href="articles/novogodniy-korporativ-80-chelovek-spb.html" class="blog-card" data-cluster="events">
+        <div class="blog-card-tag">Сезонные мероприятия</div>
+        <h3>Новогодний корпоратив 80 человек в СПб: декабрь 2026</h3>
+        <p>Пиковый месяц для HR. Бюджет, форматы, когда бронировать чтобы успеть, частые ошибки.</p>
+        <span class="format-link">Читать</span>
+      </a>
+      <a href="articles/yubiley-50-let-restoran-spb.html" class="blog-card" data-cluster="events">
+        <div class="blog-card-tag">Юбилеи</div>
+        <h3>Юбилей 50 лет в ресторане Петербурга: сценарий, бюджет</h3>
+        <p>Реальный бюджет 200-400k, сценарий вечера на 4-6 часов, где обычно теряют деньги.</p>
         <span class="format-link">Читать</span>
       </a>
     </div>

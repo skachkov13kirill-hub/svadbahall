@@ -1269,6 +1269,71 @@ section {
   }
 }
 
+/* ===== Related articles (внутри статьи) ===== */
+aside.related {
+  background: #f4eee3;
+  padding: 60px 0 70px;
+  margin-top: 80px;
+  border-top: 1px solid var(--color-border);
+}
+
+aside.related h3 {
+  font-family: var(--font-display);
+  font-size: 1.7rem;
+  font-weight: 500;
+  margin-bottom: 24px;
+  color: var(--color-text);
+}
+
+aside.related .related-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px 32px;
+}
+
+aside.related .related-list li {
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+aside.related .related-list a {
+  color: var(--color-text);
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 1.4;
+  transition: color var(--transition);
+}
+
+aside.related .related-list a:hover {
+  color: var(--color-accent-dark);
+}
+
+aside.related .related-back {
+  margin: 0;
+  font-size: 14px;
+}
+
+aside.related .related-back a {
+  color: var(--color-text-muted);
+  text-decoration: none;
+  border-bottom: 1px dashed var(--color-text-muted);
+  padding-bottom: 1px;
+}
+
+aside.related .related-back a:hover {
+  color: var(--color-accent-dark);
+  border-bottom-color: var(--color-accent-dark);
+}
+
+@media (max-width: 640px) {
+  aside.related .related-list {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 560px) {
   .hero-actions {
     flex-direction: column;

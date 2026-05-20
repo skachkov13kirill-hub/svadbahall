@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Калькулятор бюджета свадьбы в Петербурге | Аврора Холл</title>
+<meta name="description" content="Посчитайте бюджет свадебного банкета на 30–250 гостей в СПб. Реальные цены 2026: банкет, регистрация, декор, торт. Без email и регистрации.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://svadbahall.ru/calculator.html">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Калькулятор бюджета свадьбы — Аврора Холл">
+<meta property="og:description" content="Реальные цены 2026 на свадебный банкет в Санкт-Петербурге. Без email и звонков — посчитайте за 1 минуту.">
+<meta property="og:url" content="https://svadbahall.ru/calculator.html">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "name": "Калькулятор бюджета свадьбы в Петербурге",
+      "url": "https://svadbahall.ru/calculator.html",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web",
+      "offers": {"@type": "Offer", "price": "0", "priceCurrency": "RUB"},
+      "publisher": {"@id": "https://svadbahall.ru/#org"},
+      "inLanguage": "ru-RU",
+      "isPartOf": {"@id": "https://svadbahall.ru/#website"}
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Главная", "item": "https://svadbahall.ru/"},
+        {"@type": "ListItem", "position": 2, "name": "Калькулятор бюджета", "item": "https://svadbahall.ru/calculator.html"}
+      ]
+    }
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<!-- TRACKERS:START -->
+<meta name="google-site-verification" content="O4fIYN0zE3mLWUhRMlkTczJyHT1WVu0TylnLdCilCFQ">
+<script>(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+m[i].l=1*new Date();
+for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+ym(109298363, "init", {clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true});</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/109298363" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- TRACKERS:END -->
+
+<style>
+.calc { padding: 60px 0 80px; }
+.calc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; }
+.calc-form { background: var(--color-card); padding: 32px; border-radius: var(--radius-lg); box-shadow: var(--shadow); }
+.calc-field { margin-bottom: 20px; }
+.calc-field label { display: block; font-size: 14px; font-weight: 500; margin-bottom: 8px; color: var(--color-text); }
+.calc-field input[type=number], .calc-field select { width: 100%; padding: 12px 14px; border: 1px solid var(--color-border); border-radius: var(--radius); font-size: 16px; background: var(--color-bg); }
+.calc-options { display: flex; flex-direction: column; gap: 10px; margin-top: 8px; }
+.calc-options label { display: flex; align-items: center; gap: 10px; cursor: pointer; font-weight: 400; font-size: 15px; }
+.calc-result { background: var(--color-bg-dark); color: var(--color-bg); padding: 32px; border-radius: var(--radius-lg); position: sticky; top: 90px; align-self: start; }
+.calc-result h3 { font-family: var(--font-display); color: var(--color-bg); margin-bottom: 16px; font-size: 1.4rem; }
+.calc-total { font-family: var(--font-display); font-size: 2.8rem; color: var(--color-accent); margin: 24px 0; }
+.calc-total small { font-size: 1rem; color: rgba(250,248,245,0.7); display: block; margin-top: 4px; }
+.calc-breakdown { font-size: 14px; line-height: 1.8; color: rgba(250,248,245,0.85); border-top: 1px solid rgba(250,248,245,0.15); padding-top: 16px; margin-top: 16px; }
+.calc-breakdown-row { display: flex; justify-content: space-between; padding: 4px 0; }
+.calc-cta { margin-top: 24px; }
+.calc-disclaimer { font-size: 13px; color: var(--color-text-muted); margin-top: 16px; }
+@media (max-width: 760px) { .calc-grid { grid-template-columns: 1fr; } .calc-result { position: static; } }
+</style>
+</head>
+<body>
+
+<header class="header" id="header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">Аврора <span>Холл</span></a>
+    <nav class="nav" id="nav">
+      <a href="index.html#formats" class="nav-link">Форматы</a>
+      <a href="index.html#hall" class="nav-link">Зал</a>
+      <a href="index.html#tariffs" class="nav-link">Тарифы</a>
+      <a href="blog.html" class="nav-link">Блог</a>
+      <a href="index.html#contact" class="btn btn-primary">Получить смету</a>
+    </nav>
+    <button class="nav-mobile-toggle" id="navToggle" aria-label="Меню">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </div>
+</header>
+
+<section class="blog-hero">
+  <div class="container-narrow">
+    <span class="hero-tag" style="color: var(--color-accent);">Калькулятор</span>
+    <h1>Сколько стоит свадьба в Петербурге</h1>
+    <p>Считаем по реальным ценам Авроры Холл на 2026 год. Без email, без звонков — посчитаете сами за 1 минуту.</p>
+  </div>
+</section>
+
+<section class="calc">
+  <div class="container">
+    <div class="calc-grid">
+
+      <form class="calc-form" id="calcForm">
+        <div class="calc-field">
+          <label for="guests">Число гостей</label>
+          <input type="number" id="guests" name="guests" min="10" max="350" value="80" required>
+        </div>
+
+        <div class="calc-field">
+          <label for="package">Пакет</label>
+          <select id="package" name="package">
+            <option value="3800">Базовый — 3 800 ₽/гость</option>
+            <option value="5800" selected>Премиум — 5 800 ₽/гость (самый частый)</option>
+            <option value="8500">Под ключ — 8 500 ₽/гость</option>
+          </select>
+        </div>
+
+        <div class="calc-field">
+          <label>Дополнительно</label>
+          <div class="calc-options">
+            <label><input type="checkbox" name="ceremony" value="25000"> Выездная регистрация (+25 000 ₽) — если пакет не «Премиум»/«Под ключ»</label>
+            <label><input type="checkbox" name="host" value="35000" checked> Ведущий с программой (+35 000 ₽)</label>
+            <label><input type="checkbox" name="photo" value="60000" checked> Фотограф 8 часов (+60 000 ₽)</label>
+            <label><input type="checkbox" name="video" value="80000"> Видеооператор (+80 000 ₽)</label>
+            <label><input type="checkbox" name="cake_basic" value="4000"> Торт от 4 кг (+4 000 ₽) — если пакет «Базовый»</label>
+            <label><input type="checkbox" name="decor_extra" value="30000"> Расширенный декор (+30 000 ₽)</label>
+            <label><input type="checkbox" name="alcohol" value="40000" checked> Бар с напитками (+40 000 ₽)</label>
+          </div>
+        </div>
+      </form>
+
+      <div class="calc-result">
+        <h3>Бюджет свадьбы</h3>
+        <div class="calc-total" id="calcTotal">— ₽<small id="calcPerGuest">— ₽/гость</small></div>
+        <div class="calc-breakdown" id="calcBreakdown"></div>
+        <div class="calc-cta">
+          <a href="index.html#contact" class="btn btn-primary btn-lg" style="width: 100%; text-align: center;">Получить смету под свою дату</a>
+        </div>
+        <p class="calc-disclaimer">Расчёт ориентировочный. Финальная смета — после уточнения даты и состава гостей. Без предоплаты при бронировании за 60+ дней.</p>
+      </div>
+
+    </div>
+
+    <div class="container-narrow" style="margin-top: 60px;">
+      <h2>Что в реальности не входит в калькулятор</h2>
+      <p>Калькулятор покрывает 80% типичной свадьбы. На что обычно забывают заложить:</p>
+      <ul>
+        <li><strong>Кольца и обручи</strong> — 25–80 тыс ₽</li>
+        <li><strong>Платье и костюм</strong> — 60–200 тыс ₽</li>
+        <li><strong>Букет невесты и бутоньерка</strong> — 5–15 тыс ₽</li>
+        <li><strong>Машина / лимузин</strong> — 8–25 тыс ₽</li>
+        <li><strong>Гостиница для иногородних гостей</strong> — индивидуально</li>
+      </ul>
+      <p><a href="articles/svadebnyy-banket-na-80-chelovek-spb.html">Полный гид по бюджету на 80 гостей →</a></p>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">Аврора <span>Холл</span></div>
+        <p class="footer-tagline">Камерный ресторан для свадеб и торжеств в историческом центре Санкт-Петербурга.</p>
+      </div>
+      <div>
+        <h4 class="footer-heading">Полезное</h4>
+        <ul class="footer-list">
+          <li><a href="blog.html">Блог</a></li>
+          <li><a href="calculator.html">Калькулятор бюджета</a></li>
+          <li><a href="index.html#tariffs">Тарифы</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-heading">Контакты</h4>
+        <ul class="footer-list">
+          <li>+7 (999) 568-34-22</li>
+          <li>hello@svadbahall.ru</li>
+          <li><a href="https://t.me/aurorahall_spb" target="_blank" rel="noopener">@aurorahall_spb</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Аврора Холл. Демонстрационный проект.</span>
+      <span class="demo-badge">DEMO</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  const fmt = n => new Intl.NumberFormat('ru-RU').format(Math.round(n));
+  const form = document.getElementById('calcForm');
+  const totalEl = document.getElementById('calcTotal');
+  const perEl = document.getElementById('calcPerGuest');
+  const brEl = document.getElementById('calcBreakdown');
+
+  const PACKAGE_LABELS = {3800:'Базовый',5800:'Премиум',8500:'Под ключ'};
+  const OPTION_LABELS = {
+    ceremony:'Выездная регистрация',
+    host:'Ведущий',
+    photo:'Фотограф',
+    video:'Видеооператор',
+    cake_basic:'Торт',
+    decor_extra:'Расширенный декор',
+    alcohol:'Бар с напитками'
+  };
+
+  function recalc(){
+    const guests = Math.max(10, Math.min(350, parseInt(form.guests.value || '0', 10)));
+    const perGuest = parseInt(form.package.value, 10);
+    const banket = guests * perGuest;
+    let extras = 0;
+    const rows = [];
+    rows.push({label: `Пакет «${PACKAGE_LABELS[perGuest]}» · ${guests} гостей × ${fmt(perGuest)} ₽`, value: banket});
+    form.querySelectorAll('input[type=checkbox]').forEach(cb => {
+      if (cb.checked) {
+        const v = parseInt(cb.value, 10);
+        extras += v;
+        rows.push({label: OPTION_LABELS[cb.name] || cb.name, value: v});
+      }
+    });
+    const total = banket + extras;
+    totalEl.firstChild.nodeValue = fmt(total) + ' ₽';
+    perEl.textContent = fmt(total/guests) + ' ₽/гость · банкет + допы';
+    brEl.innerHTML = rows.map(r => `<div class="calc-breakdown-row"><span>${r.label}</span><span>${fmt(r.value)} ₽</span></div>`).join('');
+  }
+  form.addEventListener('input', recalc);
+  recalc();
+})();
+</script>
+<script src="script.js"></script>
+</body>
+</html>
