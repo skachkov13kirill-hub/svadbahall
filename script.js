@@ -63,7 +63,7 @@
   // ВАЖНО: в продакшене токен бота НЕ хранится на клиенте.
   // Это демо-форма: отправляет на безопасный прокси-эндпоинт.
   // В демо-режиме — показывает успех без реальной отправки.
-  const FORM_ENDPOINT = ''; // оставлено пустым для демо-режима
+  const FORM_ENDPOINT = 'https://seo-leads.skachkovkirill8.workers.dev/submit'; // оставлено пустым для демо-режима
 
   const form = document.getElementById('contactForm');
   if (form) {
@@ -81,6 +81,9 @@
       const data = Object.fromEntries(new FormData(form).entries());
 
       try {
+                data.site = 'svadbahall.ru';
+        data.action = 'form_submit';
+        data.honeypot = data.hp_check || '';
         if (FORM_ENDPOINT) {
           const response = await fetch(FORM_ENDPOINT, {
             method: 'POST',
